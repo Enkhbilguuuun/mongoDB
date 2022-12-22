@@ -6,7 +6,7 @@ import router from "./router/User.js"
 const app = express();
 
 app.use(express.json());
-app.use("/", router);
+app.use('/users', router)
 
 
 app.get("/", (req, res) =>{
